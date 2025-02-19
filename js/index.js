@@ -8139,24 +8139,24 @@ const Cm = "/assets/profile-pic-28e73db2.webp",
                 {
                   title: "Técnico Superior en Desarrollo Web",
                   institution: "Enric Valor",
-                  date: "2021-2023",
+                  date: "",
                 },
                 {
                   title: "Técnico en Redes y Sistemas Informáticos",
                   institution: "Enric Valor",
-                  date: "2019 - 2021",
+                  date: "",
                 },
               ]
             : [
                 {
                   title: "Software Technician",
-                  institution: "Enric Valor",
-                  date: "2021-2023",
+                  institution: "",
+                  date: "",
                 },
                 {
                   title: "Technician in Networks and Computer Systems",
-                  institution: "Enric Valor",
-                  date: "2019 - 2021",
+                  institution: "",
+                  date: "",
                 },
               ],
         r = [
@@ -8259,8 +8259,8 @@ const Cm = "/assets/profile-pic-28e73db2.webp",
       );
     },
   },
-  dh = "/assets/projects/astro-bytes-0d6c3d43.webp",
-  mh = "/assets/projects/ecommerce-ab884490.webp",
+  dh = "/assets/projects/myphonerescue.png",
+  mh = "/assets/projects/yanditechcare.png",
   hh = "/assets/projects/somllums.webp",
   ph = "/assets/projects/portfolio-135ad045.webp",
   gh = "/assets/projects/reading-list-5919b9e0.webp",
@@ -8346,12 +8346,28 @@ const Cm = "/assets/profile-pic-28e73db2.webp",
           t("titles.work") === "Proyectos"
             ? [
                 {
-                  title: "LUXPOWER",
+                  title: "POWERLUX",
                   description:
                     "App de gestión de empresa de suministros construida en Laravel",
                   img: "somllums.webp",
                   code: "https://github.com/YonBol/POWERLUX",
-                  demo: "http://powerluxproject.sytes.net/",
+                  demo: "https://seashell-gazelle-602285.hostingersite.com/home",
+                },
+                {
+                  title: "MYPHONERESCUE",
+                  description:
+                    "Web de una tienda de reparaciones de movil en Wordpress",
+                  img: "myphonerescue.png",
+                  code: "#",
+                  demo: "https://www.myphonerescue.com.au",
+                },
+                {
+                  title: "Y&ITECHCARE",
+                  description:
+                    "Web de empresa de desarrollo web",
+                  img: "yanditechcare.png",
+                  code: "#",
+                  demo: "https://www.yanditechcare.com",
                 },
               ]
             : [
@@ -8361,14 +8377,31 @@ const Cm = "/assets/profile-pic-28e73db2.webp",
                     "Supply company management app built in Laravel",
                   img: "somllums.webp",
                   code: "https://github.com/YonBol/POWERLUX",
-                  demo: "https://powerlux-production.up.railway.app/",
-                }
-              ],
+                  demo: "https://seashell-gazelle-602285.hostingersite.com/home",
+                },
+                {
+                  title: "MYPHONERESCUE",
+                  description:
+                    "Mobile repair shop made with WordPress",
+                  img: "myphonerescue.png",
+                  code: "#",
+                  demo: "https://www.myphonerescue.com.au",
+                },
+                {
+                  title: "Y&ITECHCARE",
+                  description:
+                    "Web developers bussines website",
+                  img: "yanditechcare.png",
+                  code: "#",
+                  demo: "https://www.yanditechcare.com",
+                },
+              ]
+              ,
         r = (s) =>
           new URL(
             Object.assign({
-              "1": dh,
-              "2": mh,
+              "/src/assets/img/projects/myphonerescue.png": dh,
+              "/src/assets/img/projects/yanditechcare.png": mh,
               "/src/assets/img/projects/somllums.webp": hh,
               "3": ph,
               "4": gh,
