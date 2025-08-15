@@ -8406,7 +8406,7 @@ const Cm = "/assets/profile-pic-28e73db2.webp",
                 {
                   title: "DEVICE DADDY",
                   description:
-                    "Refurbished phone online shop in Sydney",
+                    "Online refurbished phone shop in Sydney",
                   img: "devicedaddy.png",
                   code: "#",
                   demo: "https://devicedaddy.com.au",
@@ -8451,9 +8451,9 @@ const Cm = "/assets/profile-pic-28e73db2.webp",
                           {
                             src: r(i.img),
                             alt: "project image",
-                            class: "w-full",
-                            width: "0",
-                            height: "0",
+                            class: "w-full h-1/2 object-cover",
+                            /* width: "0",
+                            height: "0", */
                           },
                           null,
                           8,
