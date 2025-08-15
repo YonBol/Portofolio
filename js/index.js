@@ -8268,7 +8268,7 @@ const Cm = "/assets/profile-pic-28e73db2.webp",
   bh = { class: "max-w-custom m-auto flex flex-col gap-8 pt-20 pb-20 w-5/6" },
   vh = { class: "title" },
   yh = A("span", { class: "text-primary" }, ".", -1),
-  Eh = { class: /*"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full"*/"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch" },
+  Eh = { class: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full" },
   wh = ["src"],
   xh = { class: "p-5 flex flex-col gap-5 border-t-2 border-primary" },
   Ch = { class: "flex flex-col gap-1" },
@@ -8406,7 +8406,7 @@ const Cm = "/assets/profile-pic-28e73db2.webp",
                 {
                   title: "DEVICE DADDY",
                   description:
-                    "Online refurbished phone shop in Sydney",
+                    "Online Refurbished phone shop in Sydney",
                   img: "devicedaddy.png",
                   code: "#",
                   demo: "https://devicedaddy.com.au",
@@ -8443,7 +8443,7 @@ const Cm = "/assets/profile-pic-28e73db2.webp",
                       {
                         key: i.title,
                         class:
-                          /*"shadow-md bg-bgLightSecondary dark:bg-bgDarkSecondary border border-transparent dark:border-sky-900 rounded-xl overflow-hidden"*/"shadow-md bg-bgLightSecondary dark:bg-bgDarkSecondary border border-transparent dark:border-sky-900 rounded-xl overflow-hidden flex flex-col",
+                          "shadow-md bg-bgLightSecondary dark:bg-bgDarkSecondary border border-transparent dark:border-sky-900 rounded-xl overflow-hidden",
                       },
                       [
                         A(
@@ -8451,9 +8451,9 @@ const Cm = "/assets/profile-pic-28e73db2.webp",
                           {
                             src: r(i.img),
                             alt: "project image",
-                            class: "w-full h-1/2 object-cover",
-                            /* width: "0",
-                            height: "0", */
+                            class: "w-full",
+                            width: "0",
+                            height: "0",
                           },
                           null,
                           8,
@@ -8517,7 +8517,94 @@ const Cm = "/assets/profile-pic-28e73db2.webp",
                 ),
                 128
               )),
-              Ph,
+              A("div", Eh, [
+              (ge(!0),
+              _e(
+                Oe,
+                null,
+                rn(
+                  n(),
+                  (i) => (
+                    ge(),
+                    _e(
+                      "div",
+                      {
+                        key: i.title,
+                        class:
+                          "shadow-md bg-bgLightSecondary dark:bg-bgDarkSecondary border border-transparent dark:border-sky-900 rounded-xl overflow-hidden",
+                      },
+                      [
+                        A(
+                          "img",
+                          {
+                            src: r(i.img),
+                            alt: "project image",
+                            class: "w-full",
+                            width: "0",
+                            height: "0",
+                          },
+                          null,
+                          8,
+                          wh
+                        ),
+                        A("div", xh, [
+                          A("div", Ch, [
+                            A("h3", Lh, oe(i.title), 1),
+                            A("p", kh, oe(i.description), 1),
+                          ]),
+                          A("div", Th, [
+                            A(
+                              "a",
+                              {
+                                href: i.code,
+                                target: "_blank",
+                                rel: "noopener noreferrer",
+                                "aria-label": "Code",
+                                class: "btn btn-outline text-sm",
+                              },
+                              [Ve(oe(D(t)("work.codeBtn")) + " ", 1), $h],
+                              8,
+                              Sh
+                            ),
+                            i.demo != "#"
+                              ? (ge(),
+                                _e(
+                                  "a",
+                                  {
+                                    key: 0,
+                                    href: i.demo,
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    "aria-label": "Demo",
+                                    class: "btn text-sm",
+                                  },
+                                  [Ve(oe(D(t)("work.demoBtn")) + " ", 1), Ih],
+                                  8,
+                                  Rh
+                                ))
+                              : (ge(),
+                                _e(
+                                  "a",
+                                  {
+                                    key: 1,
+                                    href: i.demo,
+                                    target: "_self",
+                                    rel: "noopener noreferrer",
+                                    "aria-label": "Demo",
+                                    class: "btn text-sm",
+                                  },
+                                  [Ve(oe(D(t)("work.demoBtn")) + " ", 1), Ah],
+                                  8,
+                                  Oh
+                                )),
+                          ]),
+                        ]),
+                      ]
+                    )
+                  )
+                ),
+                128
+              )),
               Nh,
             ]),
           ]),
