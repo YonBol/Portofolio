@@ -8443,7 +8443,7 @@ const Cm = "/assets/profile-pic-28e73db2.webp",
                       {
                         key: i.title,
                         class:
-                          /*"shadow-md bg-bgLightSecondary dark:bg-bgDarkSecondary border border-transparent dark:border-sky-900 rounded-xl overflow-hidden"*/"shadow-md bg-bgLightSecondary dark:bg-bgDarkSecondary border border-transparent dark:border-sky-900 rounded-xl overflow-hidden h-96 flex flex-col",
+                          /*"shadow-md bg-bgLightSecondary dark:bg-bgDarkSecondary border border-transparent dark:border-sky-900 rounded-xl overflow-hidden"*/"shadow-md bg-bgLightSecondary dark:bg-bgDarkSecondary border border-transparent dark:border-sky-900 rounded-xl overflow-hidden flex flex-col",
                       },
                       [
                         A(
