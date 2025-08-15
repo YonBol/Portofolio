@@ -8262,7 +8262,7 @@ const Cm = "/assets/profile-pic-28e73db2.webp",
   dh = "/assets/projects/myphonerescue.png",
   mh = "/assets/projects/yanditechcare.png",
   hh = "/assets/projects/somllums.webp",
-  ph = "/assets/projects/portfolio-135ad045.webp",
+  ph = "/assets/projects/devicedaddy.png",
   gh = "/assets/projects/reading-list-5919b9e0.webp",
   _h = { class: "bg-slate-50 bg-opacity-75 dark:bg-transparent", id: "work" },
   bh = { class: "max-w-custom m-auto flex flex-col gap-8 pt-20 pb-20 w-5/6" },
@@ -8356,7 +8356,7 @@ const Cm = "/assets/profile-pic-28e73db2.webp",
                 {
                   title: "MYPHONERESCUE",
                   description:
-                    "Web de una tienda de reparaciones de movil en Wordpress",
+                    "Web de una tienda de reparaciones de movil en Sydney",
                   img: "myphonerescue.png",
                   code: "#",
                   demo: "https://www.myphonerescue.com.au",
@@ -8368,6 +8368,14 @@ const Cm = "/assets/profile-pic-28e73db2.webp",
                   img: "yanditechcare.png",
                   code: "#",
                   demo: "https://www.yanditechcare.com",
+                },
+                {
+                  title: "DEVICE DADDY",
+                  description:
+                    "Tienda de dispositivos reacondicionados en Sydney",
+                  img: "devicedaddy.png",
+                  code: "#",
+                  demo: "https://devicedaddy.com.au",
                 },
               ]
             : [
@@ -8395,6 +8403,14 @@ const Cm = "/assets/profile-pic-28e73db2.webp",
                   code: "#",
                   demo: "https://www.yanditechcare.com",
                 },
+                {
+                  title: "DEVICE DADDY",
+                  description:
+                    "Refurbished phone online shop in Sydney",
+                  img: "devicedaddy.png",
+                  code: "#",
+                  demo: "https://devicedaddy.com.au",
+                },
               ]
               ,
         r = (s) =>
@@ -8403,7 +8419,7 @@ const Cm = "/assets/profile-pic-28e73db2.webp",
               "/src/assets/img/projects/myphonerescue.png": dh,
               "/src/assets/img/projects/yanditechcare.png": mh,
               "/src/assets/img/projects/somllums.webp": hh,
-              "3": ph,
+              "/src/assets/img/projects/devicedaddy.png": ph,
               "4": gh,
             })[`/src/assets/img/projects/${s}`],
             self.location
