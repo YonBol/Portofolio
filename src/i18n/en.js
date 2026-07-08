@@ -114,7 +114,7 @@ export default {
   contact: {
     title: 'Get in Touch',
     subtitle: "Don't be shy, and leave me a message :)",
-    location: 'Spain',
+    location: 'Australia / Spain / Indonesia',
     form: {
       name: 'Name',
       email: 'Email',
