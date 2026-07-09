@@ -29,7 +29,14 @@ const { t, tm } = useI18n()
           :key="item.title"
           class="glow-card overflow-hidden rounded-2xl bg-white dark:bg-bgDark"
         >
+          <img
+            v-if="item.img"
+            :src="`/assets/ai-showcase/${item.img}`"
+            :alt="item.title"
+            class="aspect-[4/3] w-full object-cover"
+          />
           <div
+            v-else
             class="flex aspect-[4/3] w-full items-center justify-center"
             style="background: repeating-linear-gradient(135deg, #101b30 0px, #101b30 14px, #0c1526 14px, #0c1526 28px)"
           >
@@ -37,7 +44,10 @@ const { t, tm } = useI18n()
           </div>
           <div class="flex items-center justify-between gap-3 px-5 py-[18px]">
             <h3 class="text-base font-bold dark:text-white">{{ item.title }}</h3>
-            <span class="whitespace-nowrap rounded-full bg-primary/10 px-[10px] py-[5px] text-[11.5px] font-bold tracking-wide text-primary">
+            <span
+              v-if="!item.img"
+              class="whitespace-nowrap rounded-full bg-primary/10 px-[10px] py-[5px] text-[11.5px] font-bold tracking-wide text-primary"
+            >
               {{ t('aiShowcase.badge') }}
             </span>
           </div>

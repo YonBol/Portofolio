@@ -59,7 +59,7 @@ export default {
     subtitle: "AI avatars, voices and UGC-style content I'm producing right now. Demos landing here soon.",
     badge: 'COMING SOON',
     items: [
-      { label: 'UGC AVATAR DEMO', title: 'AI UGC Avatar' },
+      { label: 'UGC AVATAR DEMO', title: 'AI UGC Avatar', img: 'ai-ugc-avatar.png' },
       { label: 'WORKFLOW PIPELINE DEMO', title: 'Workflows & Pipelines' },
       { label: 'AUTO-GENERATED AD DEMO', title: 'Automated Ad' },
     ],

@@ -14,9 +14,9 @@ const copy = computed(() => ({
 </script>
 
 <template>
-  <section id="home" class="bg-bgLightSecondary dark:hero-dark-bg min-h-screen">
+  <section id="home" class="bg-bgLightSecondary dark:hero-dark-bg lg:min-h-screen">
     <div
-      class="max-w-custom w-5/6 min-h-screen pt-20 flex flex-col items-center justify-center gap-9 m-auto lg:flex-row-reverse lg:justify-between"
+      class="max-w-custom w-5/6 lg:min-h-screen pt-28 pb-16 lg:pt-20 lg:pb-0 flex flex-col items-center justify-center gap-9 m-auto lg:flex-row-reverse lg:justify-between"
     >
       <img
         src="/assets/profile-pic.jpeg"

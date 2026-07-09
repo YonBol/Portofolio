@@ -59,7 +59,7 @@ export default {
     subtitle: 'Avatares, voces y contenido estilo UGC que estoy produciendo ahora mismo. Demos disponibles próximamente.',
     badge: 'PRÓXIMAMENTE',
     items: [
-      { label: 'DEMO AVATAR UGC', title: 'Avatar UGC con IA' },
+      { label: 'DEMO AVATAR UGC', title: 'Avatar UGC con IA', img: 'ai-ugc-avatar.png' },
       { label: 'DEMO PIPELINE DE FLUJOS', title: 'Flujos & Pipelines' },
       { label: 'DEMO ANUNCIO AUTOGENERADO', title: 'Anuncio Automatizado' },
     ],
