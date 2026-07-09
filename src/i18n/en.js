@@ -133,4 +133,9 @@ export default {
     more: 'More about',
     me: 'me',
   },
+  devNotice: {
+    title: 'Site still in progress',
+    message: "I'm actively working on this redesign — feel free to look around, some pieces are still being polished.",
+    dismiss: 'Dismiss',
+  },
 }

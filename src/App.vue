@@ -8,6 +8,7 @@ import ProcessSection from './components/ProcessSection.vue'
 import ProjectsSection from './components/ProjectsSection.vue'
 import ContactSection from './components/ContactSection.vue'
 import AppFooter from './components/AppFooter.vue'
+import DevNoticeBanner from './components/DevNoticeBanner.vue'
 
 // Flip to false once real AI/UGC demos exist and this section should retire.
 const AI_SHOWCASE_VISIBLE = true
@@ -26,5 +27,6 @@ const AI_SHOWCASE_VISIBLE = true
       <ContactSection />
     </main>
     <AppFooter />
+    <DevNoticeBanner />
   </div>
 </template>
