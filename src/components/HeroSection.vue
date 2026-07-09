@@ -19,7 +19,7 @@ const copy = computed(() => ({
       class="max-w-custom w-5/6 min-h-screen pt-20 flex flex-col items-center justify-center gap-9 m-auto lg:flex-row-reverse lg:justify-between"
     >
       <img
-        src="/assets/profile-pic-28e73db2.webp"
+        src="/assets/profile-pic.jpeg"
         alt="Yon Bollain"
         width="320"
         height="320"

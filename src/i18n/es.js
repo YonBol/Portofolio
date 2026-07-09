@@ -122,6 +122,7 @@ export default {
       send: 'Enviar',
       sending: 'Enviando',
       sent: '¡Mensaje enviado!',
+      error: 'Algo salió mal. Inténtalo de nuevo o escríbeme directamente.',
     },
     validations: {
       required: 'Este campo es requerido',

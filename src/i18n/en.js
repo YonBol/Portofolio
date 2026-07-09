@@ -122,6 +122,7 @@ export default {
       send: 'Send',
       sending: 'Sending',
       sent: 'Message sent!',
+      error: 'Something went wrong. Please try again or email me directly.',
     },
     validations: {
       required: 'This field is required',

@@ -1,18 +1,31 @@
 <script setup>
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import emailjs from '@emailjs/browser'
+
+const EMAILJS_SERVICE_ID = 'service_hxhnvqu'
+const EMAILJS_TEMPLATE_ID = 'template_pknd27o'
+const EMAILJS_PUBLIC_KEY = '1IyOCDUQwPdjmLEG8'
 
 const { t } = useI18n()
 const form = ref({ name: '', email: '', message: '' })
+const formEl = ref(null)
 const sending = ref(false)
 const sent = ref(false)
+const error = ref(false)
 
-function onSubmit() {
+async function onSubmit() {
   sending.value = true
-  setTimeout(() => {
-    sending.value = false
+  error.value = false
+  try {
+    await emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, formEl.value, EMAILJS_PUBLIC_KEY)
     sent.value = true
-  }, 800)
+    form.value = { name: '', email: '', message: '' }
+  } catch (e) {
+    error.value = true
+  } finally {
+    sending.value = false
+  }
 }
 </script>
 
@@ -29,6 +42,7 @@ function onSubmit() {
       </div>
 
       <form
+        ref="formEl"
         class="glow-card row-span-3 bg-bgLightSecondary dark:bg-bgDarkSecondary max-w-md w-full py-6 px-8 rounded-xl flex flex-col gap-3 place-self-center lg:place-self-end"
         @submit.prevent="onSubmit"
       >
@@ -47,7 +61,7 @@ function onSubmit() {
         <button type="submit" class="btn w-full cursor-pointer text-sm h-10 disabled:bg-slate-400 mt-1" :disabled="sending">
           <span v-if="!sending && !sent">{{ t('contact.form.send') }}</span>
           <span v-else-if="sent">{{ t('contact.form.sent') }}</span>
-          <div v-else class="flex items-center justify-center gap-2">
+          <div v-else-if="sending" class="flex items-center justify-center gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="animate-spin">
               <path d="M21 12a9 9 0 1 1-6.219-8.56" />
@@ -55,6 +69,7 @@ function onSubmit() {
             {{ t('contact.form.sending') }}
           </div>
         </button>
+        <p v-if="error" class="error-msg">{{ t('contact.form.error') }}</p>
       </form>
 
       <div class="flex flex-col gap-4 w-full items-center lg:items-start">
