@@ -60,7 +60,7 @@ export default {
     badge: 'PRÓXIMAMENTE',
     items: [
       { label: 'DEMO AVATAR UGC', title: 'Avatar UGC con IA', img: 'ai-ugc-avatar.png' },
-      { label: 'DEMO PIPELINE DE FLUJOS', title: 'Flujos & Pipelines' },
+      { label: 'DEMO PIPELINE DE FLUJOS', title: 'Flujos & Pipelines', img: 'workflow.png' },
       { label: 'DEMO ANUNCIO AUTOGENERADO', title: 'Anuncio Automatizado' },
     ],
   },

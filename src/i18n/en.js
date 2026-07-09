@@ -60,7 +60,7 @@ export default {
     badge: 'COMING SOON',
     items: [
       { label: 'UGC AVATAR DEMO', title: 'AI UGC Avatar', img: 'ai-ugc-avatar.png' },
-      { label: 'WORKFLOW PIPELINE DEMO', title: 'Workflows & Pipelines' },
+      { label: 'WORKFLOW PIPELINE DEMO', title: 'Workflows & Pipelines', img: 'workflow.png' },
       { label: 'AUTO-GENERATED AD DEMO', title: 'Automated Ad' },
     ],
   },
